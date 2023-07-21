@@ -5,10 +5,9 @@ import "./App.css";
 class App extends React.Component {
   constructor(props) {
     super(props);
-    this.state = {
-      showTimer: false,
-    };
-    console.log("Props: " + props);
+    // this.state = {
+    //   showTimer: false,
+    // };
   }
 
   toggleTimer = () => {
@@ -20,10 +19,11 @@ class App extends React.Component {
   render() {
     return (
       <div>
-        {this.state.showTimer && <Timer />}
-        <button onClick={this.toggleTimer}>
+        <Timer />
+        {/* {this.state.showTimer && <Timer />} */}
+        {/* <button onClick={this.toggleTimer}>
           {this.state.showTimer ? "Unmount Timer" : "Mount Timer"}
-        </button>
+        </button> */}
       </div>
     );
   }
